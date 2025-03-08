@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ff6b81">
+    <title>Chimmy Series</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome para o ícone -->
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Studio Chimmy Series</h1>
+        </header>
+        
+        <main>
+            <!-- Botão para ativar o player do SoundCloud -->
+            <button id="music-button" >
+                <i class="fas fa-music"></i> <!-- Ícone de música -->
+            </button>
+            
+            <!-- Contêiner do iframe do SoundCloud (inicialmente oculto) -->
+            <div id="soundcloud-player" style="display: none; margin-top: 20px;">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1078437562&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" 
+                    style="border-radius: 5px;">
+                </iframe>
+                <div style="font-size: 12px; color: #ffffff; line-height: 1.4; margin-top: 5px;">
+                    <a href="https://soundcloud.com/xiomara-salinas-yanac-172336683" 
+                       title="Xiomara" target="_blank" style="color: #ffffff; text-decoration: none;">Xiomara</a> · 
+                    <a href="https://soundcloud.com/xiomara-salinas-yanac-172336683/sets/doramas" 
+                       title="... doramas ..." target="_blank" style="color: #ffffff; text-decoration: none;">... doramas ...</a>
+                </div>
+            </div>
+
+            <!-- Seu conteúdo de busca e lista -->
+            <input type="text" id="search-input" placeholder="Buscar um dorama...">
+            <ul id="dramas-list"></ul>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // Função para mostrar/ocultar o player do SoundCloud ao clicar no botão
+        document.getElementById('music-button').addEventListener('click', function() {
+            var player = document.getElementById('soundcloud-player');
+            var button = document.getElementById('music-button');
+            // Alterna a visibilidade do player e mantém o botão visível
+            if (player.style.display === 'none') {
+                player.style.display = 'block';  // Exibe o player
+            } else {
+                player.style.display = 'none';  // Oculta o player
+            }
+        });
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                    console.log('ServiceWorker registrado com sucesso:', registration.scope);
+                }, function(error) {
+                    console.log('Falha no registro do ServiceWorker:', error);
+                });
+            });
+        }
+    </script>    
+</body>
+</html>
