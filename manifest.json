@@ -1,20 +1,29 @@
 {
-    "name": "Chimmy Series",
-    "short_name": "Chimmy",
-    "start_url": "/",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#ff6b81",
-    "icons": [
-      {
-        "src": "/icons/icon-192x192.png",
-        "sizes": "192x192",
-        "type": "image/png"
-      },
-      {
-        "src": "/icons/icon-512x512.png",
-        "sizes": "512x512",
-        "type": "image/png"
-      }
-    ]
+  "name": "Chimmy Series",
+  "short_name": "Chimmy",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff6b81",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "description": "O Chimmy Series é um PWA para quem ama doramas! Pesquise por suas séries favoritas e aproveite uma experiência imersiva com trilhas sonoras envolventes. Descubra novos doramas e mergulhe no universo das suas histórias favoritas de forma simples e rápida.",
+  "lang": "gu",
+  "categories": [
+    "entertainment",
+    "music",
+    "navigation"
+  ],
+  "prefer_related_applications": true,
+  "iarc_rating_id": "/livre para todas as idades"
 }
