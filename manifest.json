@@ -38,5 +38,10 @@
   "edge_side_panel": {
     "preferred_width": 320
   },
-  "id": "/https://chimmyseries.netlify.app/"
+  "display_override": [
+    "standalone",
+    "fullscreen",
+    "minimal-ui",
+    "window-controls-overlay"
+  ]
 }
