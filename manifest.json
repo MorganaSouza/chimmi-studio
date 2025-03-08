@@ -1,7 +1,7 @@
 {
   "name": "Chimmy Series",
   "short_name": "Chimmy",
-  "start_url": "/",
+  "start_url": "/https://chimmyseries.netlify.app/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ff6b81",
@@ -18,12 +18,24 @@
     }
   ],
   "description": "O Chimmy Series é um PWA para quem ama doramas! Pesquise por suas séries favoritas e aproveite uma experiência imersiva com trilhas sonoras envolventes. Descubra novos doramas e mergulhe no universo das suas histórias favoritas de forma simples e rápida.",
-  "lang": "gu",
+  "lang": "pt",
   "categories": [
     "entertainment",
     "music",
     "navigation"
   ],
   "prefer_related_applications": true,
-  "iarc_rating_id": "/livre para todas as idades"
+  "iarc_rating_id": "/livre para todas as idades",
+  "dir": "ltr",
+  "orientation": "any",
+  "shortcuts": [
+    {
+      "name": "Pesquisar Doramas",
+      "url": "/search",
+      "description": "Encontre doramas rapidamente"
+    }
+  ],
+  "edge_side_panel": {
+    "preferred_width": 320
+  }
 }
