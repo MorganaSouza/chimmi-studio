@@ -39,7 +39,7 @@ body {
 
 header {
     background-color: #ff6b81;
-    color: white;
+    color: black;
     padding: 15px;
     text-align: center;
 }
@@ -70,7 +70,7 @@ ul {
 }
 
 li {
-    background-color: #ecf0f1;
+    background-color: #d2d7d8;
     margin-bottom: 10px;
     padding: 15px;
     border-radius: 5px;
@@ -100,7 +100,7 @@ li h2 {
 li p {
     margin: 0 0 10px;
     font-size: 14px;
-    color: #7f8c8d;
+    color: #474b4b;
 }
 
 li .score {
