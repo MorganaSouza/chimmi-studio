@@ -43,5 +43,6 @@
     "fullscreen",
     "minimal-ui",
     "window-controls-overlay"
-  ]
+  ],
+  "scope": "/https://chimmyseries.netlify.app/"
 }
